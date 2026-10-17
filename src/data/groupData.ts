@@ -16,12 +16,22 @@ export const ORGANIZERS: Organizer[] = [
   {
     name: 'Houssam BOUKHECHAM',
     email: 'houssam.boukhecham@univ-amu.fr',
-    role: 'Working Group Organizer',
+    role: 'Organizer',
     affiliation: 'Aix-Marseille Université',
     researchInterests: [
       'Applied Differential Geometry',
       'Nonparametric Statistics on Manifolds',
       'Dynamical Systems'
+    ],
+  },
+  {
+    name: 'Ahmed ZEGLAOUI',
+    email: 'ahmedzeglaoui@gmail.com',
+    role: 'Organizer',
+    affiliation: 'National Higher School of Autonomous Systems Technology',
+    researchInterests: [
+      'Information Geometry',
+      'Riemannian Manifolds'
     ],
   },
 ];

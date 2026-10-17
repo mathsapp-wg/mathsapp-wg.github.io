@@ -18,7 +18,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenProposeMod
           >
             <div className="flex items-start gap-4">
               <div className="w-12 h-12 rounded-lg bg-blue-50 border border-blue-200/60 flex items-center justify-center text-blue-900 shrink-0 font-serif font-bold text-lg">
-                HB
+                {organizer.name.split(' ').map((n) => n[0]).join('')}
               </div>
               <div>
                 <h3 className="font-serif font-bold text-xl text-slate-900">

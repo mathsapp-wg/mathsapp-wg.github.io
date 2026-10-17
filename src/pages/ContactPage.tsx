@@ -14,7 +14,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onOpenProposeModal }) 
           Organizers & Contact
         </h1>
         <p className="text-sm text-slate-600 mt-1 font-sans">
-          Coordination details, physical meeting coordinates, and inquiries for MathsApp.
+          Organizers and contact information for the MathsApp Working Group.
         </p>
       </div>
 
