@@ -1,0 +1,6 @@
+{
+  "name": "MathsApp - Applied Geometry & Statistics",
+  "description": "Official homepage of the MathsApp research working group in applied geometry, statistics, and machine learning at Aix-Marseille Université.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
