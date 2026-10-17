@@ -53,7 +53,7 @@ export const UPCOMING_SEMINAR: Seminar = {
   hybridLink: 'https://univ-amu-fr.zoom.us/j/mathsapp-seminar',
   slidesUrl: '#',
   notesUrl: '#',
-  tags: ['Takens Embedding', 'Dynamical Systems', 'Delay Coordinates', 'Differential Topology', 'Attractor Reconstruction'],
+  tags: ['TBD'],
   calendarData: {
     startDateTime: '20261017T120000Z',
     endDateTime: '20261017T133000Z',
@@ -76,7 +76,7 @@ export const PAST_SEMINARS: Seminar[] = [
     themeId: 'theme-1',
     slidesUrl: '#slides-boukhecham-2026',
     notesUrl: '#notes-boukhecham-2026',
-    tags: ['Takens Embedding', 'Mutual Information'],
+    tags: ['Takens Embedding', 'Attractor Reconstruction', 'Mutual Information'],
   },
   {
     id: 'sem-2026-10-10',
