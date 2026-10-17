@@ -63,7 +63,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenProposeMod
               </div>
             </div>
 
-            <div className="pt-3">
+            {/* <div className="pt-3">
               <button
                 type="button"
                 onClick={onOpenProposeModal}
@@ -72,7 +72,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenProposeMod
                 <MessageSquare className="w-3.5 h-3.5" />
                 <span>Submit Talk Proposal to Organizer</span>
               </button>
-            </div>
+            </div> */}
           </div>
         ))}
 
@@ -95,7 +95,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenProposeMod
               <User className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
               <div>
                 <strong className="text-slate-800 block text-xs mb-0.5">Who Can Attend?</strong>
-                <span>All seminars are open to faculty members, researchers, postdoctoral fellows, and master / doctoral students interested in applied geometry and statistics.</span>
+                <span>All seminars are open to all, researchers, postdoctoral fellows, and students interested in applied geometry and statistics.</span>
               </div>
             </div>
 
@@ -103,14 +103,14 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenProposeMod
               <Globe className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
               <div>
                 <strong className="text-slate-800 block text-xs mb-0.5">Hybrid Format:</strong>
-                <span>Every talk is broadcast live via Zoom. Participants may connect remotely and participate during the open Q&A discussion.</span>
+                <span>Every talk is online.</span>
               </div>
             </div>
           </div>
 
           <div className="pt-2 border-t border-slate-100 text-xs text-slate-500">
             <p>
-              To join the working group mailing list or receive announcement reminders, send a blank email to{' '}
+              To join the working group mailing list or receive announcement reminders, send an email to{' '}
               <a href="mailto:houssam.boukhecham@univ-amu.fr?subject=Subscribe%20to%20MathsApp%20Announcements" className="text-blue-900 hover:underline font-mono">
                 houssam.boukhecham@univ-amu.fr
               </a>

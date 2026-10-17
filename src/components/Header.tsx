@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#eaf6ec] border-b border-[#c2e4cc] shadow-xs relative overflow-hidden">
-      {/* Hexagonal Tessellation Background */}
+      {/* Hexagonal Tessellation Background with Low Opacity */}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none select-none"
         xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
           MathsApp Working Group
         </Link>
 
-        {/* Zone 2: Navigation Links */}
+        {/* Zone 2: Navigation Links for Each Section Page */}
         <nav aria-label="Main" className="hidden md:flex items-center gap-6">
           <NavLink to="/home" className={navLinkClasses}>
             About
@@ -71,8 +71,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
           </NavLink>
         </nav>
 
-        {/* Zone 3: Propose a Talk Button */}
-        <div className="flex items-center gap-3 shrink-0">
+        {/* Zone 3: 1 Primary Action */}
+        {/* <div className="flex items-center gap-3 shrink-0">
           <button
             type="button"
             onClick={onOpenProposeModal}
@@ -81,7 +81,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
             <CalendarPlus className="w-3.5 h-3.5" />
             <span>Propose a Talk</span>
           </button>
-        </div>
+        </div> */}
       </div>
 
       {/* Mobile Sub-Navigation Bar */}

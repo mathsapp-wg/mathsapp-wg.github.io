@@ -30,7 +30,7 @@ export interface ResearchTheme {
   description: string;
   keyTopics: string[];
   keyQuestions: string[];
-  formulas: {
+  formulas?: {
     label: string;
     tex: string;
     note: string;

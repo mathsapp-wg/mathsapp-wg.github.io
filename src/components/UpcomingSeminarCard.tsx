@@ -102,11 +102,7 @@ export const UpcomingSeminarCard: React.FC<UpcomingSeminarCardProps> = ({ semina
         </div>
 
         {/* Seminar Logistics Bar */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 py-3 border-y border-slate-100 text-xs text-slate-600">
-          <div className="flex items-start gap-2">
-            <MapPin className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
-            <span>{seminar.location}</span>
-          </div>
+        <div className="py-3 border-y border-slate-100 text-xs text-slate-600">
           <div className="flex items-start gap-2">
             <Video className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
             <span>

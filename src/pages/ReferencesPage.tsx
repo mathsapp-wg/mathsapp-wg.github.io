@@ -10,7 +10,7 @@ export const ReferencesPage: React.FC = () => {
           References
         </h1>
         <p className="text-sm text-slate-600 mt-1 font-sans">
-          List of relevant resources, seminal articles, and monographs in applied geometry and statistics.
+          List of relevant references we recommend.
         </p>
       </div>
 
