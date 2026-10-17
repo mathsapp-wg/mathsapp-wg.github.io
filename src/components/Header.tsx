@@ -16,7 +16,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
 
   return (
     <header className="sticky top-0 z-40 bg-[#eaf6ec] border-b border-[#c2e4cc] shadow-xs relative overflow-hidden">
-      {/* Hexagonal Tessellation Background with Low Opacity */}
+      {/* Hexagonal Tessellation Background */}
       <svg
         className="absolute inset-0 w-full h-full pointer-events-none select-none"
         xmlns="http://www.w3.org/2000/svg"
@@ -52,13 +52,10 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
           MathsApp Working Group
         </Link>
 
-        {/* Zone 2: Navigation Links for Each Section Page */}
+        {/* Zone 2: Navigation Links */}
         <nav aria-label="Main" className="hidden md:flex items-center gap-6">
           <NavLink to="/home" className={navLinkClasses}>
             About
-          </NavLink>
-          <NavLink to="/events" className={navLinkClasses}>
-            Coming Events
           </NavLink>
           <NavLink to="/past-seminars" className={navLinkClasses} style={{ color: '#000000' }}>
             Past Seminars
@@ -74,7 +71,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
           </NavLink>
         </nav>
 
-        {/* Zone 3: 1 Primary Action */}
+        {/* Zone 3: Propose a Talk Button */}
         <div className="flex items-center gap-3 shrink-0">
           <button
             type="button"
@@ -91,9 +88,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenProposeModal }) => {
       <div className="relative z-10 md:hidden flex items-center gap-4 px-4 py-2 overflow-x-auto border-t border-[#cce8d4] bg-[#eaf6ec]/90 text-xs">
         <NavLink to="/home" className={navLinkClasses}>
           About
-        </NavLink>
-        <NavLink to="/events" className={navLinkClasses}>
-          Events
         </NavLink>
         <NavLink to="/past-seminars" className={navLinkClasses}>
           Past Seminars
