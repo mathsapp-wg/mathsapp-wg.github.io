@@ -6,7 +6,7 @@ export const WORKING_GROUP_INFO = {
   institution: 'Aix-Marseille Université (AMU)',
   researchUnit: 'Institut de Mathématiques de Marseille (I2M, UMR 7373 CNRS)',
   description:
-    'MathsApp Working Group is a working group that brings together researchers, postdocs, and students interested in the interaction between $\\textbf{geometry}$ and $\\textbf{statistics}$ and the applications of geometry.',
+    'MathsApp Working Group is a working group that brings together researchers, postdocs, and students interested in the interaction between geometry and statistics and the applications of geometry.',
   meetingCadence: 'Bi-weekly on Saturdays at 14:00 CET',
   location: 'Online',
   lastUpdated: '2026-10-17',
