@@ -121,15 +121,15 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
       'TBD',
       'TBD',
       'TBD',
-    ],
-    formulas: [
-      {
-        label: 'Riemannian Kernel Density Estimator',
-        tex: '\\hat{f}_n(x) = \\frac{1}{n}\\sum_{i=1}^n \\frac{1}{h^d} K\\left(\\frac{d_g(x, X_i)}{h}\\right)',
-        note: 'TBD.',
-      },
+    ]
+    // formulas: [
+    //   {
+    //     label: 'Riemannian Kernel Density Estimator',
+    //     tex: '\\hat{f}_n(x) = \\frac{1}{n}\\sum_{i=1}^n \\frac{1}{h^d} K\\left(\\frac{d_g(x, X_i)}{h}\\right)',
+    //     note: 'TBD.',
+    //   },
       
-    ],
+    // ],
   },
   {
     id: 'theme-2',
@@ -147,19 +147,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     ],
     keyQuestions: [
       'TBD',
-    ],
-    formulas: [
-      {
-        label: 'Discrete Gauss-Bonnet Defect Formula',
-        tex: '\\sum_{v \\in V} \\left( 2\\pi - \\sum_{f \\ni v} \\theta_f(v) \\right) = 2\\pi \\chi(M)',
-        note: 'TBD',
-      },
-      {
-        label: 'Dirichlet Energy for Conformal Mapping',
-        tex: 'E_D(u) = \\frac{1}{2} \\int_M |\\nabla u|^2 \\, \\mathrm{d}V_g = \\frac{1}{2} u^\\top L u',
-        note: 'TBD',
-      },
-    ],
+    ]
   },
   {
     id: 'theme-3',
@@ -179,19 +167,8 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
     ],
     keyQuestions: [
       'TBD',
-    ],
-    formulas: [
-      {
-        label: 'Riemannian Gradient Descent Step',
-        tex: 'x_{k+1} = \\operatorname{Exp}_{x_k}\\left( -\\eta \\, \\operatorname{grad} f(x_k) \\right)',
-        note: 'TBD',
-      },
-      {
-        label: 'Pullback Metric of Neural Decoder $\\phi: \\mathcal{Z} \\to \\mathcal{X}$',
-        tex: 'g_z(u, v) = \\langle J_\\phi(z) u, \\, J_\\phi(z) v \\rangle_{\\mathbb{R}^D} = u^\\top \\left( J_\\phi(z)^\\top J_\\phi(z) \\right) v',
-        note: 'TBD',
-      },
-    ],
+    ]
+    // can put formulas here if needed
   },
 ];
 

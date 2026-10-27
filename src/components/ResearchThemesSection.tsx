@@ -53,32 +53,34 @@ export const ResearchThemesSection: React.FC = () => {
           </p>
         </div>
 
-        {/* Mathematical Formulations Section */}
-        <div>
-          <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 font-semibold">
-            Mathematical Formulations & Invariants
-          </h4>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            {activeTheme.formulas.map((item, idx) => (
-              <div
-                key={idx}
-                className="bg-slate-50 rounded-lg p-4 border border-slate-200 flex flex-col justify-between"
-              >
-                <div>
-                  <div className="text-xs font-medium text-slate-700 font-sans mb-1.5">
-                    {item.label}
+        {/* Mathematical Formulations Section (optional) */}
+        {activeTheme.formulas && activeTheme.formulas.length > 0 && (
+          <div>
+            <h4 className="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3 font-semibold">
+              Mathematical Formulations & Invariants
+            </h4>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+              {activeTheme.formulas.map((item, idx) => (
+                <div
+                  key={idx}
+                  className="bg-slate-50 rounded-lg p-4 border border-slate-200 flex flex-col justify-between"
+                >
+                  <div>
+                    <div className="text-xs font-medium text-slate-700 font-sans mb-1.5">
+                      {item.label}
+                    </div>
+                    <div className="my-2 py-1 text-center bg-white rounded border border-slate-200/60 overflow-x-auto">
+                      <MathView content={`$$${item.tex}$$`} />
+                    </div>
                   </div>
-                  <div className="my-2 py-1 text-center bg-white rounded border border-slate-200/60 overflow-x-auto">
-                    <MathView content={`$$${item.tex}$$`} />
+                  <div className="text-xs text-slate-500 mt-2 border-t border-slate-200/60 pt-2 leading-relaxed">
+                    <MathView content={item.note} />
                   </div>
                 </div>
-                <div className="text-xs text-slate-500 mt-2 border-t border-slate-200/60 pt-2 leading-relaxed">
-                  <MathView content={item.note} />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Topics & Open Questions Split */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-2">
