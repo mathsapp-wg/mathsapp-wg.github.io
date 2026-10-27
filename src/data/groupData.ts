@@ -37,23 +37,23 @@ export const ORGANIZERS: Organizer[] = [
 ];
 
 export const UPCOMING_SEMINAR: Seminar = {
-  id: 'sem-TBD',
-  date: 'TBD',
-  dateFormatted: 'TBD',
+  id: 'sem-2026-11-14',
+  date: '2026-11-14',
+  dateFormatted: '14-11-2026',
   time: '15:00 – 17:00 WAT',
   speakerName: 'Ahmed Zeglaoui',
   speakerUrl: 'https://scholar.google.com/citations?user=dFW-qv8AAAAJ&hl=fr',
   speakerAffiliation: 'National Higher School of Autonomous Systems Technology',
   title: 'Information geometry and Hessian domains.',
   abstract:
-    'TBD',
+    'The objective of this talk is to introduce the notion of a Hessian domain and its relationship with information geometry. A Hessian domain $(\\Omega, g)$ (of dimension $n$, $n \\in \\mathbb{N}^*$) is a domain $\\Omega$ of $\\mathbb{R}^n$ equipped with a Hessian metric $g$ (i.e., a Riemannian metric whose matrix with respect to the usual affine coordinate system of $\\mathbb{R}^n$ is none other than the Hessian matrix of a function of class $C^2$ on $\\Omega$). In particular, we discuss the Hessian curvature of a Hessian domain, as well as the dual Hessian domain of a given Hessian domain. We conclude with the relationship between Hessian domains and information geometry, in particular Hessian domains induced by normal distributions.',
   isUpcoming: true,
   themeId: 'theme-1',
   location: 'Online',
   hybridLink: 'https://univ-amu-fr.zoom.us/j/mathsapp-seminar',
   slidesUrl: '#',
   notesUrl: '#',
-  tags: ['TBD'],
+  tags: ['Hessian Domains', 'Information Geometry', 'Normal Distributions'],
   calendarData: {
     startDateTime: '20261017T120000Z',
     endDateTime: '20261017T133000Z',

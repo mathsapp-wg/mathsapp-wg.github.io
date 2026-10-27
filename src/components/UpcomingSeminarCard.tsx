@@ -106,7 +106,7 @@ export const UpcomingSeminarCard: React.FC<UpcomingSeminarCardProps> = ({ semina
           <div className="flex items-start gap-2">
             <Video className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
             <span>
-              Hybrid access via Zoom{' '}
+              Hybrid access via the link {' '}
               <a
                 href={seminar.hybridLink}
                 target="_blank"
