@@ -164,7 +164,7 @@ export const RESEARCH_THEMES: ResearchTheme[] = [
   {
     id: 'theme-3',
     themeNumber: 3,
-    title: 'Applications to Machine Learning ("AI")',
+    title: 'Applications to Machine Learning and Data Science',
     tagline: 'TBD',
     summary:
       'TBD',
