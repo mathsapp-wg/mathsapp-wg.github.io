@@ -9,7 +9,7 @@ export const WORKING_GROUP_INFO = {
     'MathsApp Working Group is a working group that brings together researchers, postdocs, and students interested in the interaction between geometry and statistics and the applications of geometry.',
   meetingCadence: 'Bi-weekly on Saturdays at 14:00 CET',
   location: 'Online',
-  lastUpdated: '2026-10-17',
+  lastUpdated: '2026-10-27',
 };
 
 export const ORGANIZERS: Organizer[] = [
