@@ -50,7 +50,7 @@ export const UPCOMING_SEMINAR: Seminar = {
   isUpcoming: true,
   themeId: 'theme-1',
   location: 'Online',
-  hybridLink: 'https://univ-amu-fr.zoom.us/j/mathsapp-seminar',
+  hybridLink: 'https://univ-amu-fr.zoom.us/j/83179792728?pwd=BmE34a5Yw2ZQe6GZW8W9Ttfd41zOXy.1',
   slidesUrl: '#',
   notesUrl: '#',
   tags: ['Hessian Domains', 'Information Geometry', 'Normal Distributions'],
