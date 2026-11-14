@@ -9,7 +9,7 @@ export const WORKING_GROUP_INFO = {
     'MathsApp Working Group is a working group that brings together researchers, postdocs, and students interested in the interaction between geometry and statistics and the applications of geometry.',
   meetingCadence: 'Bi-weekly on Saturdays at 14:00 CET',
   location: 'Online',
-  lastUpdated: '2026-10-27',
+  lastUpdated: '2026-11-14',
 };
 
 export const ORGANIZERS: Organizer[] = [
@@ -37,6 +37,33 @@ export const ORGANIZERS: Organizer[] = [
 ];
 
 export const UPCOMING_SEMINAR: Seminar = {
+  id: 'sem-TBD',
+  date: 'TBD',
+  dateFormatted: 'TBD',
+  time: 'TBD',
+  speakerName: 'Abdelhalim AZZOUZ',
+  speakerUrl: 'https://scholar.google.com/citations?user=031bXisAAAAJ&hl=en&oi=ao',
+  speakerAffiliation: 'Université Salhi Ahmed, Naama',
+  title: 'TBD',
+  abstract:
+    'TBD',
+  isUpcoming: true,
+  themeId: 'theme-1',
+  location: 'Online',
+  hybridLink: 'zoom_link_here',
+  slidesUrl: '#',
+  notesUrl: '#',
+  tags: ['TBD', 'TBD', 'TBD'],
+  calendarData: {
+    startDateTime: 'TBD',
+    endDateTime: 'TBD',
+  },
+};
+
+
+
+export const PAST_SEMINARS: Seminar[] = [
+  {
   id: 'sem-2026-11-14',
   date: '2026-11-14',
   dateFormatted: '14-11-2026',
@@ -57,10 +84,7 @@ export const UPCOMING_SEMINAR: Seminar = {
   calendarData: {
     startDateTime: '20261017T120000Z',
     endDateTime: '20261017T133000Z',
-  },
-};
-
-export const PAST_SEMINARS: Seminar[] = [
+  }},
   {
     id: 'sem-2026-10-17',
     date: '2026-10-17',

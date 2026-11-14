@@ -10,7 +10,8 @@ interface PastSeminarsTableProps {
 export const PastSeminarsTable: React.FC<PastSeminarsTableProps> = ({ seminars }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTheme, setSelectedTheme] = useState<string>('all');
-  const [expandedId, setExpandedId] = useState<string | null>('sem-2026-10-10'); // Default expand Kouider Djerfi's talk from draft
+    const [expandedId, setExpandedId] = useState<string | null>(null);
+  //const [expandedId, setExpandedId] = useState<string | null>('sem-2026-10-10'); // Default expand Kouider Djerfi's talk from draft
 
   const filteredSeminars = useMemo(() => {
     return seminars.filter((sem) => {
@@ -90,7 +91,7 @@ export const PastSeminarsTable: React.FC<PastSeminarsTableProps> = ({ seminars }
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            ML ("AI")
+            Data Science
           </button>
         </div>
       </div>

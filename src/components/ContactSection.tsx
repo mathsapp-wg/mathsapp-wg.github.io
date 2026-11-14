@@ -1,6 +1,6 @@
 import React from 'react';
-import { Mail, MapPin, Building2, User, Globe, MessageSquare } from 'lucide-react';
-import { ORGANIZERS, WORKING_GROUP_INFO } from '../data/groupData';
+import { Mail, Building2, User, Globe, MessageSquare } from 'lucide-react';
+import { ORGANIZERS } from '../data/groupData';
 
 interface ContactSectionProps {
   onOpenProposeModal: () => void;
@@ -79,18 +79,10 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenProposeMod
         {/* Seminar Logistics & Practical Information */}
         <div className="bg-white rounded-xl border border-slate-200 p-6 md:p-8 space-y-4 shadow-xs">
           <h3 className="font-serif font-bold text-xl text-slate-900">
-            Practical Information & Attendance
+            Practical Information 
           </h3>
 
           <div className="space-y-3 text-xs text-slate-600 leading-relaxed">
-            <div className="flex items-start gap-3">
-              <MapPin className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
-              <div>
-                <strong className="text-slate-800 block text-xs mb-0.5">Physical Location:</strong>
-                <span>{WORKING_GROUP_INFO.location}</span>
-              </div>
-            </div>
-
             <div className="flex items-start gap-3">
               <User className="w-4 h-4 text-blue-900 shrink-0 mt-0.5" />
               <div>

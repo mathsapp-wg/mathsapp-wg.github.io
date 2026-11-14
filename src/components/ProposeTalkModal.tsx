@@ -168,7 +168,7 @@ export const ProposeTalkModal: React.FC<ProposeTalkModalProps> = ({
                 >
                   <option value="theme-1">Theme 1: Geometry and Statistics</option>
                   <option value="theme-2">Theme 2: Geometric Design</option>
-                  <option value="theme-3">Theme 3: Applications to ML ("AI")</option>
+                  <option value="theme-3">Theme 3: Applications to data science</option>
                 </select>
               </div>
 
