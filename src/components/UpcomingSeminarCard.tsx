@@ -54,7 +54,9 @@ export const UpcomingSeminarCard: React.FC<UpcomingSeminarCardProps> = ({ semina
       {/* Top Banner Stripe */}
       <div className="bg-slate-900 text-white px-6 py-3 flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-3 text-xs font-mono">
-          <span className="font-semibold text-amber-300">NEXT SEMINAR</span>
+          <span className="font-semibold text-amber-300">
+            {seminar.isNext ? 'NEXT SEMINAR' : 'UPCOMING SEMINAR'}
+          </span>
           <span className="text-slate-400">·</span>
           <span>{seminar.dateFormatted}</span>
           <span className="text-slate-400">·</span>

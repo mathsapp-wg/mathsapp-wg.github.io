@@ -1,6 +1,6 @@
 import React from 'react';
 import { MathView } from '../components/MathView';
-import { WORKING_GROUP_INFO, UPCOMING_SEMINAR } from '../data/groupData';
+import { WORKING_GROUP_INFO, UPCOMING_SEMINARS } from '../data/groupData';
 import { UpcomingSeminarCard } from '../components/UpcomingSeminarCard';
 
 export const HomePage: React.FC = () => {
@@ -30,7 +30,9 @@ export const HomePage: React.FC = () => {
           </h2>
         </div>
 
-        <UpcomingSeminarCard seminar={UPCOMING_SEMINAR} />
+        {UPCOMING_SEMINARS.map((seminar) => (
+          <UpcomingSeminarCard key={seminar.id} seminar={seminar} />
+        ))}
       </section>
     </div>
   );

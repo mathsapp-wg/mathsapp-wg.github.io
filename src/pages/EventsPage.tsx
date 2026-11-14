@@ -1,5 +1,5 @@
 import React from 'react';
-import { UPCOMING_SEMINAR } from '../data/groupData';
+import { UPCOMING_SEMINARS } from '../data/groupData';
 import { UpcomingSeminarCard } from '../components/UpcomingSeminarCard';
 import { CalendarPlus, MapPin, Video, Clock } from 'lucide-react';
 
@@ -21,7 +21,11 @@ export const EventsPage: React.FC<EventsPageProps> = ({ onOpenProposeModal }) =>
       </div>
 
       {/* Featured Upcoming Seminar */}
-      <UpcomingSeminarCard seminar={UPCOMING_SEMINAR} />
+      <div className="space-y-6">
+        {UPCOMING_SEMINARS.map((seminar) => (
+          <UpcomingSeminarCard key={seminar.id} seminar={seminar} />
+        ))}
+      </div>
 
       {/* Attendance & Propose Talk Strip */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">

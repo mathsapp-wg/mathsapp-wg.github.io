@@ -36,29 +36,53 @@ export const ORGANIZERS: Organizer[] = [
   },
 ];
 
-export const UPCOMING_SEMINAR: Seminar = {
-  id: 'sem-TBD',
-  date: 'TBD',
-  dateFormatted: 'TBD',
-  time: 'TBD',
-  speakerName: 'Abdelhalim AZZOUZ',
-  speakerUrl: 'https://scholar.google.com/citations?user=031bXisAAAAJ&hl=en&oi=ao',
-  speakerAffiliation: 'Université Salhi Ahmed, Naama',
-  title: 'TBD',
-  abstract:
-    'TBD',
-  isUpcoming: true,
-  themeId: 'theme-1',
-  location: 'Online',
-  hybridLink: 'zoom_link_here',
-  slidesUrl: '#',
-  notesUrl: '#',
-  tags: ['TBD', 'TBD', 'TBD'],
-  calendarData: {
-    startDateTime: 'TBD',
-    endDateTime: 'TBD',
+export const UPCOMING_SEMINARS: Seminar[] = [
+  {
+    id: 'sem-TBD',
+    date: 'TBD',
+    dateFormatted: 'TBD',
+    time: 'TBD',
+    speakerName: 'Abdelhalim AZZOUZ',
+    speakerUrl: 'https://scholar.google.com/citations?user=031bXisAAAAJ&hl=en&oi=ao',
+    speakerAffiliation: 'Université Salhi Ahmed, Naama',
+    title: 'TBD',
+    abstract: 'TBD',
+    isUpcoming: true,
+    isNext: true,
+    themeId: 'theme-1',
+    location: 'Online',
+    hybridLink: 'zoom_link_here',
+    slidesUrl: '#',
+    notesUrl: '#',
+    tags: ['TBD', 'TBD', 'TBD'],
+    calendarData: {
+      startDateTime: 'TBD',
+      endDateTime: 'TBD',
+    },
   },
-};
+  {
+    id: 'sem2-TBD',
+    date: 'January 2027',
+    dateFormatted: 'January 2027',
+    time: 'TBD',
+    speakerName: 'Abdelmouksit SAGUENI',
+    speakerUrl: 'https://sites.google.com/view/abdelmouksitsagueni/accueil',
+    speakerAffiliation: 'Lagrange Center Huawei, Paris',
+    title: 'Laplacian methods for manifold learning',
+    abstract: 'TBD',
+    isUpcoming: true,
+    themeId: 'theme-1',
+    location: 'Online',
+    hybridLink: 'zoom_link_here',
+    slidesUrl: '#',
+    notesUrl: '#',
+    tags: ['Laplace-Beltrami', 'Discrete Laplacian', 'Mean curvature flow','Manifold Learning', 'TBD'],
+    calendarData: {
+      startDateTime: 'TBD',
+      endDateTime: 'TBD',
+    },
+  },
+];
 
 
 

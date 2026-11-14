@@ -9,6 +9,7 @@ export interface Seminar {
   title: string;
   abstract: string;
   isUpcoming: boolean;
+  isNext?: boolean;
   themeId: 'theme-1' | 'theme-2' | 'theme-3';
   location?: string;
   hybridLink?: string;
