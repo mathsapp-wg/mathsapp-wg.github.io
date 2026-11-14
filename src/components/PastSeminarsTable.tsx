@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { Search, ChevronDown, ChevronUp, ExternalLink, FileText, Download } from 'lucide-react';
+import { Search, ChevronDown, ChevronUp, ExternalLink } from 'lucide-react';
 import { Seminar } from '../types';
 import { MathView } from './MathView';
 
@@ -10,7 +10,8 @@ interface PastSeminarsTableProps {
 export const PastSeminarsTable: React.FC<PastSeminarsTableProps> = ({ seminars }) => {
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedTheme, setSelectedTheme] = useState<string>('all');
-    const [expandedId, setExpandedId] = useState<string | null>(null);
+  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const slidesBasePath = window.location.pathname.replace(/\/past-seminars\/?$/, '');
   //const [expandedId, setExpandedId] = useState<string | null>('sem-2026-10-10'); // Default expand Kouider Djerfi's talk from draft
 
   const filteredSeminars = useMemo(() => {
@@ -209,25 +210,15 @@ export const PastSeminarsTable: React.FC<PastSeminarsTableProps> = ({ seminars }
 
                                 {/* Slide / Materials Links */}
                                 <div className="flex items-center gap-3 text-xs">
-                                  {sem.speakerUrl && (
-                                    <a
-                                      href={sem.speakerUrl}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      className="text-blue-900 hover:underline flex items-center gap-1 font-medium"
-                                    >
-                                      <FileText className="w-3.5 h-3.5" />
-                                      <span>Speaker Scholar Profile</span>
-                                    </a>
-                                  )}
-                                  <button
-                                    type="button"
-                                    onClick={() => alert(`Slides for "${sem.title}" are archived with the working group organizer (contact houssam.boukhecham@univ-amu.fr).`)}
+                                  <a
+                                    href={`${slidesBasePath}/slides_of_past_seminars/${sem.id}.pdf`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     className="text-slate-700 hover:text-slate-900 flex items-center gap-1 hover:underline"
                                   >
-                                    <Download className="w-3.5 h-3.5" />
+                                    <ExternalLink className="w-3.5 h-3.5" />
                                     <span>Archived Slides</span>
-                                  </button>
+                                  </a>
                                 </div>
                               </div>
                             </div>
